@@ -21,7 +21,7 @@ from app.models.role import Role
 from app.models.permission import Permission
 from app.models.user_role import UserRole
 from app.models.roles_permission import RolePermission
-from app.models.inverter import Inverter
+
 
 # -------------------------------------------------
 # Alembic config
