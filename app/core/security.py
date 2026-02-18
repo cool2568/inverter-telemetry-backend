@@ -12,7 +12,7 @@ def hash_password(password:str)->str:
 def verify_password(password:str,hashed:str)->bool:
     return pwd_context.verify(password,hashed)
 
-def create_acess_token(user_id:int)->str:
+def create_access_token(user_id:int)->str:
     payload={
         "sub":str(user_id),
         "exp":datetime.now(timezone.utc) + timedelta(days=settings.ACCESS_TOKEN_EXPIRE_DAYS)

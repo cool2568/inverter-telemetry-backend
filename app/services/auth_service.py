@@ -1,5 +1,5 @@
 from fastapi import HTTPException
-from sqlalchemy.ext.asycnio import AsyncSession
+from sqlalchemy.ext.asyncio import AsyncSession
 from app.repositories.user_repo import UserRepository
 from app.models.user import User
 from app.core.security import (
